@@ -1,5 +1,7 @@
+from flask_sqlalchemy import SQLAlchemy
 import connexion
 from flask import redirect
+from models import students, teachers, tests, results
 
 # Create an instance of our app
 
