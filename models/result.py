@@ -14,19 +14,19 @@ class Result(Base):
     answers = Column(JSON, 
         nullable=False)
     
-    test_id = Column(Integer,
+    testId = Column(Integer,
         ForeignKey('test.id'))
 
-    teacher_id = Column(Integer, 
+    teacherId = Column(Integer, 
         ForeignKey('teacher.id'))
 
-    student_id = Column(Integer,
+    studentId = Column(Integer,
         ForeignKey('student.id'))
 
-    num_correct = Column(Integer,
+    numCorrect = Column(Integer,
         nullable=False)
 
-    num_questions = Column(Integer,
+    numQuestions = Column(Integer,
         nullable=False)
 
     

@@ -11,13 +11,13 @@ class Student(Base):
         primary_key=True,
         nullable=False)
 
-    firstname = Column(String,
+    firstName = Column(String,
         nullable=False)
 
-    lastname = Column(String,
+    lastName = Column(String,
         nullable=False)
 
-    teacher_id = Column(Integer,
+    teacherId = Column(Integer,
         ForeignKey('teacher.id'))
 
     teacher = relationship("Teacher",

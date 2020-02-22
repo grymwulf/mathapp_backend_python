@@ -11,10 +11,10 @@ class Teacher(Base):
         primary_key=True,
         nullable=False)
 
-    firstname = Column(String,
+    firstName = Column(String,
         nullable=False)
 
-    lastname = Column(String,
+    lastName = Column(String,
         nullable=False)
 
     students = relationship("Student", 

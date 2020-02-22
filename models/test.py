@@ -23,10 +23,13 @@ class Test(Base):
     attemptsAllowed = Column(Integer,
         nullable=False)
 
-    student = relationship("Student",
-        back_populates="student")
-        
-    teacher = relationship("Teacher",
-        back_populates="teacher")
+    teacherId = Column(Integer, 
+        ForeignKey('teacher.id'))
+
+    studentId = Column(Integer,
+        ForeignKey('student.id'))
+    
+    numQuestions = Column(Integer,
+        nullable=False)
 
     
